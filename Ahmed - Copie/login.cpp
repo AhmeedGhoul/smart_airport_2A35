@@ -29,23 +29,21 @@ void Login::on_pushButton_conn_clicked()
     QString user = ui->lineEdit_usernamee->text();
     QString pass = ui->lineEdit_passwordd->text();
     Login L(user,pass);
-    if (L.auth()){
-               hide();
-       pilote = new pilotee(this);
-       pilote->setWindowFlags(Qt::Dialog | Qt::MSWindowsFixedSizeDialogHint);
-
-   pilote ->show();
-        }
-   if (L.auth1()){
-       hide();
-         mainwindow = new MainWindow(this);
-         mainwindow->setWindowFlags(Qt::Dialog | Qt::MSWindowsFixedSizeDialogHint);
-
-       mainwindow ->show();}
+     if (L.auth()){
+            hide();
+    pilote = new pilotee(this);
+pilote ->show();
+     }
+if (L.auth1()){
+    hide();
+      mainwindow = new MainWindow(this);
+    mainwindow ->show();}
 }
 bool Login::auth(){
         bool test = false;
         QSqlQuery query,qry;
+        printf("possible");
+
         query.prepare("select * from pilote where id_pilote=:email");
         query.bindValue(":email",username);
         if(query.exec()){
@@ -76,8 +74,6 @@ bool Login::auth(){
 
         return test;
     }
-
-
 bool Login::auth1(){
     bool test = false;
     QSqlQuery query1,qry;
@@ -110,9 +106,3 @@ if(query1.exec()){
 return test;
 
 }
-
-
-
-
-
-

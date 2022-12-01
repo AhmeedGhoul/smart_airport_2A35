@@ -38,7 +38,4 @@
     <qresource prefix="/video">
         <file>video/3.mp3</file>
     </qresource>
-    <qresource prefix="/translate">
-        <file>english.qm</file>
-    </qresource>
 </RCC>

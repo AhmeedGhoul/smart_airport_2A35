@@ -405,9 +405,9 @@ color: #1990ea;
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>290</x>
       <y>0</y>
-      <width>471</width>
+      <width>411</width>
       <height>501</height>
      </rect>
     </property>
@@ -468,7 +468,7 @@ border-bottom: 1px solid #1990ea;
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>170</x>
        <y>0</y>
        <width>151</width>
        <height>81</height>
@@ -489,7 +489,7 @@ color: #1990ea;
       <rect>
        <x>0</x>
        <y>60</y>
-       <width>471</width>
+       <width>411</width>
        <height>20</height>
       </rect>
      </property>
@@ -618,7 +618,7 @@ color: #1990ea;
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>100</y>
        <width>111</width>
        <height>21</height>
@@ -643,7 +643,7 @@ color: #1990ea;
      </property>
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>250</x>
        <y>130</y>
        <width>113</width>
        <height>20</height>
@@ -653,7 +653,7 @@ color: #1990ea;
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>250</x>
        <y>100</y>
        <width>111</width>
        <height>21</height>
@@ -675,7 +675,7 @@ color: #1990ea;
     <widget class="QLineEdit" name="lineEdit_nbvol">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>220</y>
        <width>113</width>
        <height>20</height>
@@ -685,7 +685,7 @@ color: #1990ea;
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>190</y>
        <width>171</width>
        <height>21</height>
@@ -707,7 +707,7 @@ color: #1990ea;
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>250</x>
        <y>190</y>
        <width>111</width>
        <height>21</height>
@@ -731,7 +731,7 @@ color: #1990ea;
       <rect>
        <x>0</x>
        <y>410</y>
-       <width>471</width>
+       <width>411</width>
        <height>20</height>
       </rect>
      </property>
@@ -869,7 +869,7 @@ color: #1990ea;
     <widget class="QPushButton" name="pushButton_ajoutvol">
      <property name="geometry">
       <rect>
-       <x>60</x>
+       <x>40</x>
        <y>450</y>
        <width>141</width>
        <height>31</height>
@@ -897,7 +897,7 @@ background: white;}  </string>
      </property>
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>230</x>
        <y>450</y>
        <width>151</width>
        <height>31</height>
@@ -922,7 +922,7 @@ background: white;}  </string>
     <widget class="QDateTimeEdit" name="dateTimeEdit">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>90</x>
        <y>290</y>
        <width>194</width>
        <height>22</height>
@@ -932,7 +932,7 @@ background: white;}  </string>
     <widget class="QLineEdit" name="lineEdit_avionvol">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>250</x>
        <y>370</y>
        <width>113</width>
        <height>20</height>
@@ -942,7 +942,7 @@ background: white;}  </string>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>340</y>
        <width>171</width>
        <height>21</height>
@@ -964,7 +964,7 @@ background: white;}  </string>
     <widget class="QLineEdit" name="lineEdit_pilotevol">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>370</y>
        <width>113</width>
        <height>20</height>
@@ -996,7 +996,7 @@ background: white;}  </string>
     <widget class="QComboBox" name="comboBox_typevol">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>250</x>
        <y>220</y>
        <width>131</width>
        <height>21</height>
@@ -1055,7 +1055,7 @@ QComboBox::drop-down
     <widget class="QLineEdit" name="lineEdit_idvol">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
        <y>130</y>
        <width>113</width>
        <height>20</height>
@@ -1082,9 +1082,9 @@ QComboBox::drop-down
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>850</x>
+      <x>740</x>
       <y>0</y>
-      <width>741</width>
+      <width>821</width>
       <height>501</height>
      </rect>
     </property>
@@ -1188,7 +1188,7 @@ margin: 0px 0px 0px 0px;
     <widget class="QLineEdit" name="lineEdit_rechidvol">
      <property name="geometry">
       <rect>
-       <x>550</x>
+       <x>640</x>
        <y>50</y>
        <width>161</width>
        <height>31</height>
@@ -1212,7 +1212,7 @@ border-bottom: 1px solid #1990ea;
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>690</x>
+       <x>770</x>
        <y>53</y>
        <width>21</width>
        <height>21</height>
@@ -1234,7 +1234,7 @@ border-bottom: 1px solid #1990ea;
     <widget class="QPushButton" name="pushButton_suppvol">
      <property name="geometry">
       <rect>
-       <x>580</x>
+       <x>650</x>
        <y>450</y>
        <width>151</width>
        <height>31</height>
@@ -1259,7 +1259,7 @@ background: white;}  </string>
     <widget class="QPushButton" name="pushButton_impvol">
      <property name="geometry">
       <rect>
-       <x>400</x>
+       <x>470</x>
        <y>450</y>
        <width>151</width>
        <height>31</height>
@@ -1387,7 +1387,7 @@ QComboBox::drop-down
     <property name="geometry">
      <rect>
       <x>897</x>
-      <y>820</y>
+      <y>760</y>
       <width>674</width>
       <height>21</height>
      </rect>
@@ -1433,7 +1433,7 @@ border-radius: 5px;;
     <property name="geometry">
      <rect>
       <x>783</x>
-      <y>846</y>
+      <y>786</y>
       <width>160</width>
       <height>22</height>
      </rect>
@@ -1475,7 +1475,7 @@ border-radius: 5px;
     <property name="geometry">
      <rect>
       <x>790</x>
-      <y>820</y>
+      <y>760</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -1500,7 +1500,7 @@ background: white;}  </string>
     <property name="geometry">
      <rect>
       <x>780</x>
-      <y>360</y>
+      <y>300</y>
       <width>800</width>
       <height>450</height>
      </rect>
@@ -1519,7 +1519,7 @@ background: white;}  </string>
     <property name="geometry">
      <rect>
       <x>780</x>
-      <y>810</y>
+      <y>750</y>
       <width>800</width>
       <height>61</height>
      </rect>
@@ -1536,7 +1536,7 @@ background-color:black;}</string>
     <property name="geometry">
      <rect>
       <x>910</x>
-      <y>820</y>
+      <y>760</y>
       <width>661</width>
       <height>21</height>
      </rect>
@@ -1949,10 +1949,10 @@ QComboBox::drop-down
    <widget class="QFrame" name="frame_3">
     <property name="geometry">
      <rect>
-      <x>850</x>
-      <y>510</y>
-      <width>741</width>
-      <height>361</height>
+      <x>740</x>
+      <y>500</y>
+      <width>831</width>
+      <height>371</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1988,10 +1988,10 @@ background : white;
      </property>
      <property name="geometry" stdset="0">
       <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>721</width>
-       <height>321</height>
+       <x>20</x>
+       <y>30</y>
+       <width>791</width>
+       <height>331</height>
       </rect>
      </property>
     </widget>
@@ -2012,848 +2012,15 @@ background : white;
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_4">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>510</y>
-      <width>581</width>
-      <height>361</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> *{
-font-family:century gothic;
-color:#1990ea;
-border-color:#1990ea;
-font-size:14px;}
-	#frame_4 {
-
-
-font-family:century gothic;
-    border: 1px solid #1990ea;
-    border-radius: 30px;
-border-color: #eaeaea;
-    margin-top: 0.5em;
-background : white;
-}
-QLabel{
-background:transparent;}
-
-
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QLabel" name="chartview">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>561</width>
-       <height>311</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="frame_5">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>360</y>
-      <width>471</width>
-      <height>501</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> *{
-font-family:century gothic;
-color:#1990ea;
-border-color:#1990ea;
-font-size:14px;}
-	#frame_5 {
-
-
-font-family:century gothic;
-    border: 1px solid #1990ea;
-    border-radius: 30px;
-border-color: #eaeaea;
-    margin-top: 0.5em;
-background : white;
-}
-QFrame[frameShape=&quot;4&quot;],
-QFrame[frameShape=&quot;5&quot;]
-{
-   border: none;
-    border-bottom: 1px solid #1990ea;
-}
-QComboButton{
-font-family:century gothic;
-background:transparent;
-border:none;
-color:#1990ea;
-border-bottom: 1px solid #1990ea;}
-QLabel{
-background:transparent;}
-
-QLineEdit
-{
-font-family:century gothic;
-background:transparent;
-border:none;
-color:#1990ea;
-border-bottom: 1px solid #1990ea;
-}
-QDateTimeEdit
-{
-font-family:century gothic;
-background:transparent;
-border:none;
-color:#1990ea;
-border-bottom: 1px solid #1990ea;
-}</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QLabel" name="label_14">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>-10</y>
-       <width>151</width>
-       <height>81</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">*{
-font: 40pt  'Oswald';font-size:30px;
-color: #1990ea;
-}</string>
-     </property>
-     <property name="text">
-      <string>Agents</string>
-     </property>
-    </widget>
-    <widget class="Line" name="line_10">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>40</y>
-       <width>471</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="palette">
-      <palette>
-       <active>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </active>
-       <inactive>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </inactive>
-       <disabled>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </disabled>
-      </palette>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_16">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>60</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>century gothic</family>
-       <pointsize>-1</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Identifiant</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_mdpagent">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>290</x>
-       <y>80</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_17">
-     <property name="geometry">
-      <rect>
-       <x>290</x>
-       <y>60</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>century gothic</family>
-       <pointsize>-1</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Mot de passe</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_20">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>110</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>century gothic</family>
-       <pointsize>-1</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Type</string>
-     </property>
-    </widget>
-    <widget class="Line" name="line_11">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>150</y>
-       <width>471</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="palette">
-      <palette>
-       <active>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </active>
-       <inactive>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </inactive>
-       <disabled>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </disabled>
-      </palette>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QFrame[frameShape=&quot;4&quot;] /* QFrame::HLine == 0x0004 */
-{
-    color: red;
-}</string>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_ajoutagent">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>190</y>
-       <width>141</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-background: #1990ea;
-color: white;
-border-radius:15px;}  
-QPushButton:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:15px;
-background: white;}  </string>
-     </property>
-     <property name="text">
-      <string>Ajouter</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_modagent">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>270</x>
-       <y>190</y>
-       <width>151</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-background: #1990ea;
-color: white;
-border-radius:15px;}  
-QPushButton:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:15px;
-background: white;}  </string>
-     </property>
-     <property name="text">
-      <string>Modifier</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="comboBox_typeagent">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>140</y>
-       <width>151</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">
-QComboBox{
-border-bottom: 1px solid #1990ea;
-background:transparent;
-font-family:century gothic;
-subcontrol-position: top right;
-border: 1px solid #1990ea;
- padding: 1px 0px 1px 20px;
-subcontrol-origin: padding;
-color:#1990ea;
-border-radius:15px;}  
-QComboBox:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:15px;
-background: white;}  
-QComboBox QAbstractItemView
-{
-    border: 2px solid #1990ea;
-    color: #1990ea;
-    
-}
-
-QComboBox::drop-down
-{
-     subcontrol-origin: padding;
-     subcontrol-position: top right;
-     width: 15px;
-     color: blue;
-     border-left-width: 0px;
-     border-left-color: #1990ea;
-     border-left-style: solid; /* just a single line */
-     border-top-right-radius: 3px; /* same radius as the QComboBox */
-     border-bottom-right-radius: 3px;
-     padding-left: 10px;
- }</string>
-     </property>
-     <item>
-      <property name="text">
-       <string>Agent de piste</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Agent de vente</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Agent d'avion</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Agent de passager</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Agent de pilote</string>
-      </property>
-     </item>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_iusernameagent">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>80</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="Line" name="line_12">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>210</y>
-       <width>471</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="palette">
-      <palette>
-       <active>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </active>
-       <inactive>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </inactive>
-       <disabled>
-        <colorrole role="WindowText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="Text">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="ButtonText">
-         <brush brushstyle="SolidPattern">
-          <color alpha="255">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-        <colorrole role="PlaceholderText">
-         <brush brushstyle="NoBrush">
-          <color alpha="128">
-           <red>25</red>
-           <green>144</green>
-           <blue>234</blue>
-          </color>
-         </brush>
-        </colorrole>
-       </disabled>
-      </palette>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QFrame[frameShape=&quot;4&quot;] /* QFrame::HLine == 0x0004 */
-{
-    color: red;
-}</string>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Sunken</enum>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QTableView" name="tableView_2">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>240</y>
-       <width>461</width>
-       <height>192</height>
-      </rect>
-     </property>
-     <property name="selectionBehavior">
-      <enum>QAbstractItemView::SelectRows</enum>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_suppagent">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>310</x>
-       <y>450</y>
-       <width>151</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-background: #1990ea;
-color: white;
-border-radius:15px;}  
-QPushButton:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:15px;
-background: white;}  </string>
-     </property>
-     <property name="text">
-      <string>Supprimer</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_impagent">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>450</y>
-       <width>151</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-background: #1990ea;
-color: white;
-border-radius:15px;}  
-QPushButton:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:15px;
-background: white;}  </string>
-     </property>
-     <property name="text">
-      <string>Imprimer</string>
-     </property>
-    </widget>
-   </widget>
    <zorder>label_11</zorder>
-   <zorder>label_13</zorder>
-   <zorder>frame_2</zorder>
-   <zorder>frame</zorder>
-   <zorder>frame_historique</zorder>
-   <zorder>frame_4</zorder>
    <zorder>frame_3</zorder>
    <zorder>label_video1</zorder>
    <zorder>horizontalSlider_volume</zorder>
    <zorder>label_15</zorder>
-   <zorder>pushButton_2</zorder>
    <zorder>horizontalSlider_progress</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>label_13</zorder>
+   <zorder>frame_historique</zorder>
    <zorder>label_3</zorder>
    <zorder>pushButton_12</zorder>
    <zorder>pushButton_13</zorder>
@@ -2868,11 +2035,12 @@ background: white;}  </string>
    <zorder>line_3</zorder>
    <zorder>line_4</zorder>
    <zorder>line_5</zorder>
+   <zorder>frame</zorder>
+   <zorder>frame_2</zorder>
    <zorder>pushButton_3</zorder>
    <zorder>pushButton_17</zorder>
    <zorder>line_8</zorder>
    <zorder>line_9</zorder>
-   <zorder>frame_5</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

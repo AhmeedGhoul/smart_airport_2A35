@@ -22,10 +22,6 @@ public:
    void settype(QString utype){type=utype;}
    QString getid();
    void role(Ui::MainWindow *ui);
-   bool ajouter();
-   bool supprimer(QString);
-   bool modifier();
-   void afficher(Ui::MainWindow *ui);
 };
 
 #endif // ADMINS_H

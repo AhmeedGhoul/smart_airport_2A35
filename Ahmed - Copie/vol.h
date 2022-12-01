@@ -5,17 +5,8 @@
 #include <QSqlQueryModel>
 #include "ui_mainwindow.h"
 #include <QDate>
-#include <QtCharts/QChartView>
-#include <QtCharts/QBarSeries>
-#include <QtCharts/QBarSet>
-#include <QtCharts/QLegend>
-#include <QtCharts/QBarCategoryAxis>
-#include <QtCharts/QHorizontalStackedBarSeries>
-#include <QtCharts/QLineSeries>
-#include <QtCharts/QCategoryAxis>
-#include <QtCharts/QPieSeries>
-#include <QtCharts/QPieSlice>
-#include <QtCharts>
+
+
 class vol
 {
     QString dest,type,id_pilote,num_serie;
@@ -23,7 +14,6 @@ class vol
     QDate date;
 public:
 
-    QChartView *chartView ;
 
 
     vol();
@@ -43,13 +33,5 @@ public:
     void afficher(Ui::MainWindow *ui);
 void trie(Ui::MainWindow *ui);
 void initBrowserView(Ui::MainWindow *ui);
-void choix_bar(Ui::MainWindow *ui);
- void occ(Ui::MainWindow *ui);
 };
-class statt{
-public:
-    QString id,dest;
-
-};
-
 #endif // VOL_H

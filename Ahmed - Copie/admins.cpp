@@ -61,7 +61,6 @@ ui->line_4->hide();
 ui->line_5->hide();
 ui->line_8->hide();
 ui->pushButton_supphistorique->hide();
-ui->frame_5->hide();
 
 
 }
@@ -79,7 +78,6 @@ if(res1=="Agent de vente"){
     ui->line_5->hide();
     ui->line_8->hide();
     ui->pushButton_supphistorique->hide();
-    ui->frame_5->hide();
 
 }
 if(res1=="Agent d'avion"){
@@ -97,7 +95,6 @@ if(res1=="Agent d'avion"){
     ui->line_5->hide();
     ui->line_8->hide();
     ui->pushButton_supphistorique->hide();
-    ui->frame_5->hide();
 
 }
 if(res1=="Agent de passager"){
@@ -115,8 +112,6 @@ if(res1=="Agent de passager"){
     ui->line_5->hide();
     ui->line_8->hide();
     ui->pushButton_supphistorique->hide();
-    ui->frame_5->hide();
-
 }
 if(res1=="Agent de pilote"){
 
@@ -133,58 +128,6 @@ if(res1=="Agent de pilote"){
     ui->line_5->hide();
     ui->line_8->hide();
     ui->pushButton_supphistorique->hide();
-    ui->frame_5->hide();
 
 }
-}
-bool admins::ajouter()
-{
-    QSqlQuery query;
-    query.prepare("insert into admins (USERNAME,PASSWORD,type,ACTION)""values(:USERNAME,:PASSWORD,:type,:ACTION)");
-    query.bindValue(":USERNAME", username);
-    query.bindValue(":PASSWORD", pass);
-    query.bindValue(":type", type);
-    query.bindValue(":ACTION", action);
-return query.exec();
-}
-
-
-bool admins::supprimer(QString id)
-{
-QSqlQuery query;
-
-query.prepare("Delete from admins where USERNAME=:USERNAME");
-query.bindValue(":USERNAME",id);
-return query.exec();
-}
-bool admins::modifier()
-{
-
-    QSqlQuery query;
-
-          query.prepare("UPDATE admins "" SET USERNAME=:USERNAME,PASSWORD=:PASSWORD,type=:type where USERNAME='"+username+"' ");
-
-          query.bindValue(":USERNAME", username);
-          query.bindValue(":PASSWORD", pass);
-          query.bindValue(":type", type);
-
-        return    query.exec();
-}
-
-void admins::afficher(Ui::MainWindow *ui)
-{
-
-    QSqlQueryModel * modal= new QSqlQueryModel ();
-    QSqlQuery*qry=new QSqlQuery();
-
-    qry->prepare("select USERNAME,PASSWORD,type from admins");
-    qry->exec();
-    modal->setQuery(*qry);
-    modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Username"));
-    modal->setHeaderData(1,Qt::Horizontal,QObject::tr("Password"));
-     modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Type"));
-    ui->tableView_2->setModel(modal);
-
-    ui->tableView_2->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
-
 }

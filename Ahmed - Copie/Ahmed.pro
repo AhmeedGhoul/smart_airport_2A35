@@ -22,7 +22,6 @@ SOURCES += \
     login.cpp \
     main.cpp \
     mainwindow.cpp \
-    notification.cpp \
     pilotee.cpp \
     vol.cpp
 
@@ -32,7 +31,6 @@ HEADERS += \
     historique.h \
     login.h \
     mainwindow.h \
-    notification.h \
     pilotee.h \
     vol.h \
     webaxwidget.h

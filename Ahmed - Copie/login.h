@@ -21,12 +21,8 @@ public:
     ~Login();
  bool auth();
  bool auth1();
-
 private slots:
 void on_pushButton_conn_clicked();
-
-
-
 
 private:
     Ui::Login *ui;

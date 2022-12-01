@@ -5,8 +5,7 @@
 #include <QMediaPlayer>
 #include <QVideoWidget>
 #include "historique.h"
-#include "admins.h"
-#include "notification.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,9 +16,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void closeEvent (QCloseEvent *event);
-void notif();
-
 private slots:
 
 
@@ -82,26 +78,13 @@ void on_pushButton_3_clicked();
     void on_lineEdit_rechhistoriqe_textChanged(const QString &arg1);
 
 
-
-    void on_pushButton_ajoutagent_clicked();
-
-    void on_pushButton_modagent_clicked();
-
-    void on_pushButton_suppagent_clicked();
-
-    void on_pushButton_impagent_clicked();
-
-    void on_tableView_2_clicked(const QModelIndex &index);
-
 private:
    Ui::MainWindow *ui;
    vol volmp;
-   stat statt1;
-   admins admp;
    historique hismp;
    QMediaPlayer *player;
    QVideoWidget *videoWidget;
    int okey=0;
-PopUp *popUp;
+
 };
 #endif // MAINWINDOW_H
