@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
-#include "piste.h"
+#include "passager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -51,9 +51,12 @@ private slots:
 
     void on_comboBox_currentTextChanged(const QString &arg1);
 
+    void on_pushButton_2_clicked();
+
 private:
    Ui::MainWindow *ui;
-   piste pismp;
+   passager passmp;
+   QString file_path;
 
 };
 #endif // MAINWINDOW_H

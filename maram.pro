@@ -20,12 +20,12 @@ SOURCES += \
     connection.cpp \
     main.cpp \
     mainwindow.cpp \
-    piste.cpp
+    passager.cpp
 
 HEADERS += \
     connection.h \
     mainwindow.h \
-    piste.h
+    passager.h
 
 FORMS += \
     mainwindow.ui

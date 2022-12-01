@@ -405,7 +405,7 @@ color: #1990ea;
       <x>290</x>
       <y>0</y>
       <width>411</width>
-      <height>381</height>
+      <height>541</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -465,7 +465,7 @@ border-bottom: 1px solid #1990ea;
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>120</x>
        <y>0</y>
        <width>151</width>
        <height>81</height>
@@ -478,7 +478,7 @@ color: #1990ea;
 }</string>
      </property>
      <property name="text">
-      <string>Piste</string>
+      <string>Passagers</string>
      </property>
     </widget>
     <widget class="Line" name="line_6">
@@ -617,7 +617,7 @@ color: #1990ea;
       <rect>
        <x>10</x>
        <y>100</y>
-       <width>111</width>
+       <width>151</width>
        <height>21</height>
       </rect>
      </property>
@@ -631,26 +631,13 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Num de Piste</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_largeurpiste">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>130</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
+      <string>Num de passport</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>250</x>
+       <x>200</x>
        <y>100</y>
        <width>111</width>
        <height>21</height>
@@ -666,13 +653,13 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Largeur de Piste</string>
+      <string>Date de expr</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_prixpiste">
+    <widget class="QLineEdit" name="lineEdit_nompass">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>10</x>
        <y>220</y>
        <width>113</width>
        <height>20</height>
@@ -682,7 +669,7 @@ color: #1990ea;
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>10</x>
        <y>190</y>
        <width>171</width>
        <height>21</height>
@@ -698,14 +685,36 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Prix de location</string>
+      <string>Nom</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>190</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Prenom</string>
      </property>
     </widget>
     <widget class="Line" name="line_7">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>280</y>
+       <y>460</y>
        <width>411</width>
        <height>20</height>
       </rect>
@@ -845,7 +854,7 @@ color: #1990ea;
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>320</y>
+       <y>490</y>
        <width>141</width>
        <height>31</height>
       </rect>
@@ -873,7 +882,7 @@ background: white;}  </string>
      <property name="geometry">
       <rect>
        <x>230</x>
-       <y>320</y>
+       <y>490</y>
        <width>151</width>
        <height>31</height>
       </rect>
@@ -894,7 +903,81 @@ background: white;}  </string>
       <string>Modifier</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_numpiste">
+    <widget class="QDateTimeEdit" name="dateTimeEdit_datepass">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>130</y>
+       <width>194</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_avionpass">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>310</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Age</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Agepass">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>280</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Num d'avion</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_passpass">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -902,6 +985,126 @@ background: white;}  </string>
        <width>113</width>
        <height>20</height>
       </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_prenompass">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>220</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Agepass_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>century gothic</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Poids de bagage</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>370</y>
+       <width>121</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Acides</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>390</y>
+       <width>131</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pistolets</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>450</y>
+       <width>181</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Equipement Medical</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_4">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>430</y>
+       <width>201</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Equipement electronique</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_5">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>410</y>
+       <width>121</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Couteau</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>430</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Import</string>
      </property>
     </widget>
    </widget>
@@ -970,7 +1173,7 @@ color: #1990ea;
 }</string>
      </property>
      <property name="text">
-      <string>Liste de Pistes</string>
+      <string>Liste de Passagers</string>
      </property>
     </widget>
     <widget class="QTableView" name="tableView">
@@ -1176,17 +1379,32 @@ QComboBox::drop-down
      </item>
      <item>
       <property name="text">
-       <string>Num de piste</string>
+       <string>Num de passport</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Largeur de Piste</string>
+       <string>Date</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Prix de location</string>
+       <string>Nom</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Prenom</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Age</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Num d'avion</string>
       </property>
      </item>
     </widget>
