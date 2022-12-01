@@ -6,18 +6,16 @@
 #include <QMessageBox>
 #include <QDesktopWidget>
 #include <iostream>
-#include <QDialog>
-#include "login.h"
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Login L;
+    MainWindow w;
     connection c;
 
 
     bool test=c.createconnection();
     if(test)
-    {L.show();
+    {w.show();
 
 
 }

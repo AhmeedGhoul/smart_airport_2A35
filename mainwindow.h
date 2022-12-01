@@ -1,10 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
-#include "vol.h"
-#include <QMediaPlayer>
-#include <QVideoWidget>
-#include "historique.h"
+#include "avion.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -54,37 +51,9 @@ private slots:
 
     void on_comboBox_currentTextChanged(const QString &arg1);
 
-    void on_horizontalSlider_volume_sliderMoved(int position);
-
-    void on_horizontalSlider_progress_sliderMoved(int position);
-
-    void on_pushButton_2_clicked();
-void on_pushButton_3_clicked();
-    void on_durationChanged(qint64 position);
-    void on_positionChanged(qint64 position);
-
-
-    void on_pushButton_17_clicked();
-
-    void on_pushButton_clicked();
-
-    void on_pushButton_pdfhistorique_clicked();
-
-    void on_pushButton_supphistorique_clicked();
-
-
-    void on_comboBox_trihistorique_currentTextChanged(const QString &arg1);
-
-    void on_lineEdit_rechhistoriqe_textChanged(const QString &arg1);
-
-
 private:
    Ui::MainWindow *ui;
-   vol volmp;
-   historique hismp;
-   QMediaPlayer *player;
-   QVideoWidget *videoWidget;
-   int okey=0;
+   avion avmp;
 
 };
 #endif // MAINWINDOW_H

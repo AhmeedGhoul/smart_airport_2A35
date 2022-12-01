@@ -23,14 +23,11 @@
       <height>901</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/icons/icons/menu.png</pixmap>
+     <pixmap resource="resources.qrc">:/img/img/Untitled-1.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -40,7 +37,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>209</y>
+      <y>219</y>
       <width>253</width>
       <height>100</height>
      </rect>
@@ -66,7 +63,7 @@ color: black;
      <string>Gestion de Reservations</string>
     </property>
     <property name="icon">
-     <iconset>
+     <iconset resource="resources.qrc">
       <normaloff>:/reservation.png</normaloff>:/reservation.png</iconset>
     </property>
     <property name="iconSize">
@@ -83,7 +80,7 @@ color: black;
     <property name="geometry">
      <rect>
       <x>-50</x>
-      <y>308</y>
+      <y>318</y>
       <width>303</width>
       <height>100</height>
      </rect>
@@ -106,7 +103,7 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
      <string>Gestion de Avions</string>
     </property>
     <property name="icon">
-     <iconset>
+     <iconset resource="resources.qrc">
       <normaloff>:/plane.png</normaloff>:/plane.png</iconset>
     </property>
     <property name="iconSize">
@@ -123,7 +120,7 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
     <property name="geometry">
      <rect>
       <x>-70</x>
-      <y>407</y>
+      <y>417</y>
       <width>323</width>
       <height>100</height>
      </rect>
@@ -147,7 +144,7 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
      <string>Gestion de vols</string>
     </property>
     <property name="icon">
-     <iconset>
+     <iconset resource="resources.qrc">
       <normaloff>:/tickets.png</normaloff>:/tickets.png</iconset>
     </property>
     <property name="iconSize">
@@ -164,7 +161,7 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
     <property name="geometry">
      <rect>
       <x>-55</x>
-      <y>506</y>
+      <y>516</y>
       <width>308</width>
       <height>100</height>
      </rect>
@@ -188,7 +185,7 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
      <string>Gestion de Pistes</string>
     </property>
     <property name="icon">
-     <iconset>
+     <iconset resource="resources.qrc">
       <normaloff>:/runway.png</normaloff>:/runway.png</iconset>
     </property>
     <property name="iconSize">
@@ -205,7 +202,7 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
     <property name="geometry">
      <rect>
       <x>-10</x>
-      <y>110</y>
+      <y>120</y>
       <width>263</width>
       <height>100</height>
      </rect>
@@ -256,7 +253,7 @@ color: black;
     <property name="geometry">
      <rect>
       <x>-60</x>
-      <y>605</y>
+      <y>615</y>
       <width>313</width>
       <height>100</height>
      </rect>
@@ -295,7 +292,7 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
     <property name="geometry">
      <rect>
       <x>-10</x>
-      <y>-80</y>
+      <y>-70</y>
       <width>261</width>
       <height>311</height>
      </rect>
@@ -313,9 +310,9 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>820</y>
-      <width>151</width>
+      <x>30</x>
+      <y>810</y>
+      <width>187</width>
       <height>51</height>
      </rect>
     </property>
@@ -341,7 +338,7 @@ color: #1990ea;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>209</y>
+      <y>219</y>
       <width>118</width>
       <height>3</height>
      </rect>
@@ -354,7 +351,7 @@ color: #1990ea;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>308</y>
+      <y>318</y>
       <width>118</width>
       <height>3</height>
      </rect>
@@ -367,7 +364,7 @@ color: #1990ea;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>407</y>
+      <y>417</y>
       <width>118</width>
       <height>3</height>
      </rect>
@@ -380,7 +377,7 @@ color: #1990ea;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>506</y>
+      <y>516</y>
       <width>118</width>
       <height>3</height>
      </rect>
@@ -393,7 +390,7 @@ color: #1990ea;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>605</y>
+      <y>615</y>
       <width>118</width>
       <height>3</height>
      </rect>
@@ -408,7 +405,7 @@ color: #1990ea;
       <x>290</x>
       <y>0</y>
       <width>411</width>
-      <height>501</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -481,7 +478,7 @@ color: #1990ea;
 }</string>
      </property>
      <property name="text">
-      <string>Vols</string>
+      <string>Avions</string>
      </property>
     </widget>
     <widget class="Line" name="line_6">
@@ -620,7 +617,7 @@ color: #1990ea;
       <rect>
        <x>10</x>
        <y>100</y>
-       <width>111</width>
+       <width>151</width>
        <height>21</height>
       </rect>
      </property>
@@ -634,10 +631,10 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Identifiant</string>
+      <string>Num Serie d' Avion</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_destvol">
+    <widget class="QLineEdit" name="lineEdit_poidsav">
      <property name="enabled">
       <bool>true</bool>
      </property>
@@ -655,7 +652,7 @@ color: #1990ea;
       <rect>
        <x>250</x>
        <y>100</y>
-       <width>111</width>
+       <width>131</width>
        <height>21</height>
       </rect>
      </property>
@@ -669,10 +666,10 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Destination</string>
+      <string>Poids de Bagage</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_nbvol">
+    <widget class="QLineEdit" name="lineEdit_pisteav">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -701,7 +698,7 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Nombre de passageurs</string>
+      <string>Num de Piste</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
@@ -723,14 +720,14 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Type</string>
+      <string>Etat</string>
      </property>
     </widget>
     <widget class="Line" name="line_7">
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>410</y>
+       <y>270</y>
        <width>411</width>
        <height>20</height>
       </rect>
@@ -870,7 +867,7 @@ color: #1990ea;
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>450</y>
+       <y>310</y>
        <width>141</width>
        <height>31</height>
       </rect>
@@ -898,7 +895,7 @@ background: white;}  </string>
      <property name="geometry">
       <rect>
        <x>230</x>
-       <y>450</y>
+       <y>310</y>
        <width>151</width>
        <height>31</height>
       </rect>
@@ -919,81 +916,7 @@ background: white;}  </string>
       <string>Modifier</string>
      </property>
     </widget>
-    <widget class="QDateTimeEdit" name="dateTimeEdit">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>290</y>
-       <width>194</width>
-       <height>22</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_avionvol">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>370</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_9">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>340</y>
-       <width>171</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>century gothic</family>
-       <pointsize>-1</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Pilote</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_pilotevol">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>370</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_10">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>340</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>century gothic</family>
-       <pointsize>-1</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Avion</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="comboBox_typevol">
+    <widget class="QComboBox" name="comboBox_etatav">
      <property name="geometry">
       <rect>
        <x>250</x>
@@ -1052,7 +975,7 @@ QComboBox::drop-down
       </property>
      </item>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_idvol">
+    <widget class="QLineEdit" name="lineEdit_numav">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1334,32 +1257,22 @@ QComboBox::drop-down
      </item>
      <item>
       <property name="text">
-       <string>Identifiant</string>
+       <string>Num Serie</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Destination</string>
+       <string>Poids de Bagage</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Nb de passagers</string>
+       <string>Num de Piste</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Avion</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Date</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Pilote</string>
+       <string>Etat</string>
       </property>
      </item>
     </widget>
@@ -1383,644 +1296,7 @@ QComboBox::drop-down
      </property>
     </widget>
    </widget>
-   <widget class="QSlider" name="horizontalSlider_progress">
-    <property name="geometry">
-     <rect>
-      <x>897</x>
-      <y>760</y>
-      <width>674</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QSlider::groove:horizontal {
-height: 6px;
-background: grey;
-
-margin:8px;
-border: 1px solid #c17d08;
-border-radius: 12px;
-}
-
-QSlider::sub-page:horizontal {
-background: #1990ea;
-border-radius: 12px;
-height: 30px;
-}
-
-QSlider::add-page:horizontal {
-background: #e9e9e9;
-
-height: 10px;
-border-radius: 12px;
-}
-
-QSlider::handle:horizontal {
-background: transparent;
-width: 20px;
-margin:-15px;
-
-border: 1px solid transparent;
-border-radius: 5px;;
-}
-</string>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="horizontalSlider_volume">
-    <property name="geometry">
-     <rect>
-      <x>783</x>
-      <y>786</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QSlider::groove:horizontal {
-height: 20px;
-background: grey;
-margin: 8px;
-border: 1px solid blue;
-border-radius: 20px;
-}
-
-QSlider::sub-page:horizontal {
-background: #1990ea;
-height: 30px;
-border-radius: 12px;
-}
-
-QSlider::add-page:horizontal {
-background: #e9e9e9;
-height: 10px;
-border-radius: 12px;
-}
-
-QSlider::handle:horizontal {
-background: transparent;
-width: 22px;
-margin: -10px;
-border: 1px solid transparent;
-border-radius: 5px;
-}</string>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>790</x>
-      <y>760</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-background: #1990ea;
-color: white;
-border-radius:5px;}  
-QPushButton:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:5px;
-background: white;}  </string>
-    </property>
-    <property name="text">
-     <string>start</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>780</x>
-      <y>300</y>
-      <width>800</width>
-      <height>450</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/img/téléchargé.jfif</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_video1">
-    <property name="geometry">
-     <rect>
-      <x>780</x>
-      <y>750</y>
-      <width>800</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QFrame{
-background-color:black;}</string>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>910</x>
-      <y>760</y>
-      <width>661</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel{
-background-color: #e9e9e9;}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>820</y>
-      <width>71</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">*{
-font: 40pt  'Oswald';font-size:22px;}
-QPushButton{
-background: transparent;
-border-radius:60px;
-color: white;
-qproperty-icon:url(&quot;:/icons/icons/info1.png&quot;);
-}
-QPushButton:checked {
-background: white;
-border-image:url(&quot;:/img/img/final.png&quot;);color: black;
-}</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>37</width>
-      <height>40</height>
-     </size>
-    </property>
-    <property name="checkable">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_17">
-    <property name="geometry">
-     <rect>
-      <x>-109</x>
-      <y>704</y>
-      <width>362</width>
-      <height>100</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">*{
-font: 40pt  'Oswald';font-size:22px;}
-QPushButton{
-background: transparent;
-border-radius:60px;
-color: white;
-qproperty-icon:url(&quot;:/icons/icons/pilot.png&quot;);
-}
-QPushButton:checked {
-background: white;
-border-image:url(&quot;:/img/img/final.png&quot;);color: black;
-}</string>
-    </property>
-    <property name="text">
-     <string>  Historique</string>
-    </property>
-    <property name="icon">
-     <iconset resource="resources.qrc">
-      <normaloff>:/icons/icons/history.png</normaloff>:/icons/icons/history.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>37</width>
-      <height>40</height>
-     </size>
-    </property>
-    <property name="checkable">
-     <bool>true</bool>
-    </property>
-    <property name="checked">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="Line" name="line_8">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>704</y>
-      <width>118</width>
-      <height>3</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_9">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>800</y>
-      <width>251</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_historique">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>80</y>
-      <width>1191</width>
-      <height>641</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> *{
-font-family:century gothic;
-color:#1990ea;
-border-color:#1990ea;
-font-size:14px;}
-	#frame_2{
-
-
-font-family:century gothic;
-    border: 1px solid #1990ea;
-    border-radius: 30px;
-border-color: lightgray;
-    margin-top: 0.5em;
-background : white;
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QLabel" name="label_22">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>0</y>
-       <width>271</width>
-       <height>81</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">*{
-font: 40pt  'Oswald';font-size:30px;
-color: #1990ea;
-}</string>
-     </property>
-     <property name="text">
-      <string>Historique</string>
-     </property>
-    </widget>
-    <widget class="QTableView" name="tableView_4">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>90</y>
-       <width>1151</width>
-       <height>471</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">
-
-
-
-QScrollBar:vertical {
-    background: rgb(188, 224, 235);
-            border: 0px solid #999999;
-            width:10px;    
-
-margin: 0px 0px 0px 0px;
-}
- QScrollBar::handle:vertical {
-    background: rgb(71, 153, 176);
-          	border: 0px solid red;
-            min-height: 0px;
-			border-radius: 8px;
-
-	 }
-QScrollBar:horizontal {
-    background: rgb(188, 224, 235);
-            border: 0px solid #999999;
-margin: 0px 0px 0px 0px;
-
-}
- QScrollBar::handle:horizontal {
-    background: rgb(71, 153, 176);
-                     	border: 0px solid red;
-            min-height: 0px;
-			border-radius: 8px;
-            width:10px;    
-
-
- }</string>
-     </property>
-     <property name="selectionMode">
-      <enum>QAbstractItemView::ContiguousSelection</enum>
-     </property>
-     <property name="selectionBehavior">
-      <enum>QAbstractItemView::SelectRows</enum>
-     </property>
-     <attribute name="horizontalHeaderHighlightSections">
-      <bool>false</bool>
-     </attribute>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_rechhistoriqe">
-     <property name="geometry">
-      <rect>
-       <x>1010</x>
-       <y>57</y>
-       <width>161</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLineEdit
-{
-font-family:century gothic;
-background:transparent;
-border:none;
-color:#1990ea;
-border-bottom: 1px solid #1990ea;
-
-}</string>
-     </property>
-     <property name="placeholderText">
-      <string>Rechercher</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_23">
-     <property name="geometry">
-      <rect>
-       <x>1140</x>
-       <y>60</y>
-       <width>21</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="resources.qrc">:/img/img/chercher.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_supphistorique">
-     <property name="geometry">
-      <rect>
-       <x>880</x>
-       <y>590</y>
-       <width>151</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-background: #1990ea;
-color: white;
-border-radius:15px;}  
-QPushButton:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:15px;
-background: white;}  </string>
-     </property>
-     <property name="text">
-      <string>Supprimer</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_pdfhistorique">
-     <property name="geometry">
-      <rect>
-       <x>710</x>
-       <y>590</y>
-       <width>151</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-background: #1990ea;
-color: white;
-border-radius:15px;}  
-QPushButton:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:15px;
-background: white;}  </string>
-     </property>
-     <property name="text">
-      <string>Imprimer</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="comboBox_trihistorique">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>590</y>
-       <width>161</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QComboBox{
-background: #1990ea;
-subcontrol-position: top right;
-    border-style: solid;
-    border: 1px solid #1990ea;
- padding: 1px 0px 1px 44px;
-subcontrol-origin: padding;
-color: white;
-border-radius:15px;}  
-QComboBox:hover
-{
-    border: 1px solid #1990ea;
-color:  #1990ea;
-border-radius:15px;
-background: white;}  
-QComboBox QAbstractItemView
-{
-    border: 2px solid #1990ea;
-    color: #1990ea;
-    
-}
-
-QComboBox::drop-down
-{
-     subcontrol-origin: padding;
-     subcontrol-position: top right;
-     width: 15px;
-     color: blue;
-     border-left-width: 0px;
-     border-left-color: #1990ea;
-     border-left-style: solid; /* just a single line */
-     border-top-right-radius: 3px; /* same radius as the QComboBox */
-     border-bottom-right-radius: 3px;
-     padding-left: 10px;
- }</string>
-     </property>
-     <item>
-      <property name="text">
-       <string>Par defaut</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>User</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Date</string>
-      </property>
-     </item>
-    </widget>
-    <widget class="QLabel" name="label_24">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>580</y>
-       <width>51</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="resources.qrc">:/img/img/sort.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <zorder>tableView_4</zorder>
-    <zorder>label_22</zorder>
-    <zorder>lineEdit_rechhistoriqe</zorder>
-    <zorder>label_23</zorder>
-    <zorder>pushButton_supphistorique</zorder>
-    <zorder>pushButton_pdfhistorique</zorder>
-    <zorder>comboBox_trihistorique</zorder>
-    <zorder>label_24</zorder>
-   </widget>
-   <widget class="QFrame" name="frame_3">
-    <property name="geometry">
-     <rect>
-      <x>740</x>
-      <y>500</y>
-      <width>831</width>
-      <height>371</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> *{
-font-family:century gothic;
-color:#1990ea;
-border-color:#1990ea;
-font-size:14px;}
-	#frame_3{
-
-
-font-family:century gothic;
-    border: 1px solid #1990ea;
-    border-radius: 30px;
-border-color: lightgray;
-    margin-top: 0.5em;
-background : white;
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="WebAxWidget" name="WebBrowser">
-     <property name="control" stdset="0">
-      <string>{8856F961-340A-11D0-A96B-00C04FD705A2}</string>
-     </property>
-     <property name="focusPolicy" stdset="0">
-      <enum>Qt::StrongFocus</enum>
-     </property>
-     <property name="geometry" stdset="0">
-      <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>791</width>
-       <height>331</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="WebAxWidget" name="WebBrowser_2">
-     <property name="control" stdset="0">
-      <string>{8856F961-340A-11D0-A96B-00C04FD705A2}</string>
-     </property>
-     <property name="focusPolicy" stdset="0">
-      <enum>Qt::StrongFocus</enum>
-     </property>
-     <property name="geometry" stdset="0">
-      <rect>
-       <x>740</x>
-       <y>490</y>
-       <width>691</width>
-       <height>461</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
    <zorder>label_11</zorder>
-   <zorder>frame_3</zorder>
-   <zorder>label_video1</zorder>
-   <zorder>horizontalSlider_volume</zorder>
-   <zorder>label_15</zorder>
-   <zorder>horizontalSlider_progress</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>label_13</zorder>
-   <zorder>frame_historique</zorder>
    <zorder>label_3</zorder>
    <zorder>pushButton_12</zorder>
    <zorder>pushButton_13</zorder>
@@ -2037,10 +1313,6 @@ background : white;
    <zorder>line_5</zorder>
    <zorder>frame</zorder>
    <zorder>frame_2</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton_17</zorder>
-   <zorder>line_8</zorder>
-   <zorder>line_9</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -2053,18 +1325,6 @@ background : white;
    </property>
   </widget>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>QAxWidget</class>
-   <extends>QWidget</extends>
-   <header>qaxwidget.h</header>
-  </customwidget>
-  <customwidget>
-   <class>WebAxWidget</class>
-   <extends>QAxWidget</extends>
-   <header>webaxwidget.h</header>
-  </customwidget>
- </customwidgets>
  <resources>
   <include location="resources.qrc"/>
  </resources>

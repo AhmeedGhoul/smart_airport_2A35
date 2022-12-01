@@ -5,16 +5,28 @@
         <file>img/1.png</file>
         <file>img/2.png</file>
         <file>img/final.png</file>
+        <file>img/background.png</file>
+        <file>img/background1.png</file>
+        <file>img/background2.png</file>
         <file>img/bg.png</file>
         <file>img/bg2.png</file>
         <file>img/chercher.png</file>
+        <file>img/check.png</file>
         <file>img/bg3.png</file>
         <file>img/sort.png</file>
-        <file>img/téléchargé.jfif</file>
-        <file>img/utilisateur.png</file>
     </qresource>
-    <qresource prefix="/"/>
-    <qresource prefix="/fonts"/>
+    <qresource prefix="/">
+        <file>passager1.png</file>
+        <file>passager.png</file>
+        <file>pilot.png</file>
+        <file>reservation.png</file>
+        <file>runway.png</file>
+        <file>tickets.png</file>
+        <file>plane.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>fonts/FoundrySans-ExtraBold.ttf</file>
+    </qresource>
     <qresource prefix="/icons">
         <file>icons/passager1.png</file>
         <file>icons/passager.png</file>
@@ -28,14 +40,5 @@
         <file>icons/runway1.png</file>
         <file>icons/tickets.png</file>
         <file>icons/tickets1.png</file>
-        <file>icons/info.png</file>
-        <file>icons/info1.png</file>
-        <file>icons/info0.png</file>
-        <file>icons/menu.png</file>
-        <file>icons/history.png</file>
-        <file>icons/history1.png</file>
-    </qresource>
-    <qresource prefix="/video">
-        <file>video/3.mp3</file>
     </qresource>
 </RCC>
