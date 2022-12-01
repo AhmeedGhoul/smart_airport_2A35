@@ -1,9 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "reservation.h"
 #include <QGraphicsDropShadowEffect>
 #include <QMessageBox>
 #include <QSqlQuery>
-#include "avion.h"
 #include <QTextStream>
 #include <QTextDocument>
 #include <QDesktopWidget>
@@ -30,12 +30,11 @@ MainWindow::MainWindow(QWidget *parent)
     ui->frame_2->setGraphicsEffect(effect1);
     ui->frame_2->hide();
     ui->frame->hide();
-  avmp.afficher(ui);
+  resmp.afficher(ui);
 //  ui->lineEdit_idvol->setValidator(new QIntValidator (0,99999999,ui->lineEdit_idvol));
 //  ui->lineEdit_nbvol->setValidator(new QIntValidator (0,99999999,ui->lineEdit_nbvol));
 //  ui->lineEdit_rechidvol->setValidator(new QIntValidator (0,99999999,ui->lineEdit_rechidvol));
 //  ui->lineEdit_destvol->setValidator(new QRegExpValidator(  QRegExp("[A-Za-z]*")  ));
-//
 }
 
 MainWindow::~MainWindow()
@@ -101,8 +100,10 @@ void MainWindow::on_pushButton_11_clicked()
     ui->pushButton_13->setChecked(false);
     ui->pushButton_14->setChecked(false);
     ui->pushButton_11->setChecked(true);
-    ui->frame_2->hide();
-    ui->frame->hide();
+    ui->frame_2->show();
+    ui->frame->show();
+    resmp.afficher(ui);
+
         ui->pushButton_11->setStyleSheet("qproperty-icon:url(:/icons/icons/reservation1.png);background: white;border-image:url(:/img/img/final.png);color: #1990ea;font: 40pt  'Oswald';font-size:22px;");
 init_button(ui->pushButton_15,":/icons/icons/passager.png");
 init_button(ui->pushButton_16,":/icons/icons/pilot.png");
@@ -119,9 +120,9 @@ void MainWindow::on_pushButton_13_clicked()
     ui->pushButton_12->setChecked(false);
     ui->pushButton_14->setChecked(false);
     ui->pushButton_13->setChecked(true);
-    ui->frame_2->show();
-    ui->frame->show();
-    avmp.afficher(ui);
+    ui->frame_2->hide();
+    ui->frame->hide();
+    resmp.afficher(ui);
 
     ui->pushButton_13->setStyleSheet("qproperty-icon:url(:/icons/icons/tickets1.png);background: white;border-image:url(:/img/img/final.png);color: #1990ea;font: 40pt  'Oswald';font-size:22px;");
 init_button(ui->pushButton_15,":/icons/icons/passager.png");
@@ -169,23 +170,20 @@ init_button(ui->pushButton_11,":/icons/icons/reservation.png");
 
 void MainWindow::on_pushButton_ajoutvol_clicked()
 {
-    QString num_serie=ui->lineEdit_numav->text();
-    int poids=ui->lineEdit_poidsav->text().toInt();
-    QString etat=ui->comboBox_etatav->currentText();
-    int num_pilote=ui->lineEdit_pisteav->text().toInt();
-   avion a(num_serie,poids,etat,num_pilote);
+    QString numres=ui->lineEdit_numres->text();
+    QString idvolres=ui->lineEdit_idvolres->text();
 
-    bool test=a.ajouter();
+    QString numpassreser=ui->lineEdit_numpassreser->text();
+    QString classe=ui->comboBox_classeres->currentText();
+    int prixreser=ui->lineEdit_prixreser->text().toInt();
+    reservation R(numres,idvolres,numpassreser,classe,prixreser);
+
+    bool test=R.ajouter();
     if (test)
     {
-        avmp.afficher(ui);
+        resmp.afficher(ui);
 
-        QMessageBox::information(nullptr,QObject::tr("OK"),
-                                 QObject::tr("Ajout effectué \n""Click Cancel to exit"),QMessageBox::Cancel);
     }
-    else
-        QMessageBox::critical(nullptr,QObject::tr("OK"),
-                                 QObject::tr("Ajout non effectué \n""Click Cancel to exit"),QMessageBox::Cancel);
 
 
 }
@@ -195,11 +193,11 @@ void MainWindow::on_pushButton_suppvol_clicked()
     int i=index.row();
     QModelIndex in=index.sibling(i,0);
     QString val=ui->tableView->model()->data(in).toString();
-    bool test=avmp.supprimer(val);
+    bool test=resmp.supprimer(val);
     if (test)
     {
 
-        avmp.afficher(ui);
+        resmp.afficher(ui);
 
     }
 
@@ -207,14 +205,16 @@ void MainWindow::on_pushButton_suppvol_clicked()
 
 void MainWindow::on_pushButton_modvol_clicked()
 {
-    QString num_serie=ui->lineEdit_numav->text();
-    int poids=ui->lineEdit_poidsav->text().toInt();
-    QString etat=ui->comboBox_etatav->currentText();
-    int num_pilote=ui->lineEdit_pisteav->text().toInt();
-    avion a(num_serie,poids,etat,num_pilote);
-    bool test=a.modifier();
+    QString numres=ui->lineEdit_numres->text();
+    QString idvolres=ui->lineEdit_idvolres->text();
+
+    QString numpassreser=ui->lineEdit_numpassreser->text();
+    QString classe=ui->comboBox_classeres->currentText();
+    int prixreser=ui->lineEdit_prixreser->text().toInt();
+    reservation R(numres,idvolres,numpassreser,classe,prixreser);
+    bool test=R.modifier();
 if(test)
-avmp.afficher(ui);
+resmp.afficher(ui);
 }
 
 
@@ -227,17 +227,18 @@ QString val=ui->tableView->model()->data(in).toString();
 
 
     QSqlQuery qry;
-    qry.prepare("select num_serie,POIDS_BAGAGE,ETAT,NUM_PISTE from avion where num_serie='"+val+"' " );
+    qry.prepare("select NUM_RESER,NUM_PASS,ID,CLASSE,PRIX from reservation where NUM_RESER='"+val+"' " );
 
 
     if(qry.exec())
     {
         while(qry.next())
         {
-            ui->lineEdit_numav->setText(qry.value(0).toString());
-            ui->lineEdit_pisteav->setText(qry.value(3).toString());
-            ui->lineEdit_poidsav->setText(qry.value(1).toString());
-            ui->comboBox_etatav->setCurrentText(qry.value(2).toString());
+            ui->lineEdit_numres->setText(qry.value(0).toString());
+            ui->lineEdit_idvolres->setText(qry.value(2).toString());
+            ui->comboBox_classeres->setCurrentText(qry.value(3).toString());
+            ui->lineEdit_numpassreser->setText(qry.value(1).toString());
+            ui->lineEdit_prixreser->setText(qry.value(4).toString());
 
         }
 }}
@@ -251,12 +252,12 @@ void MainWindow::on_lineEdit_rechidvol_textChanged(const QString &arg1)
 
     if(text.isEmpty())
     {
-        avmp.afficher(ui);
+        resmp.afficher(ui);
 
     }
     else
     {
-        qry->prepare("select num_serie,POIDS_BAGAGE,ETAT,NUM_PISTE from avion where num_serie='"+text+"'");
+        qry->prepare("select NUM_RESER,NUM_PASS,ID,CLASSE,PRIX from reservation where NUM_RESER='"+text+"'");
         qry->exec();
         modal->setQuery(*qry);
         ui->tableView->setModel(modal);
@@ -324,61 +325,84 @@ void MainWindow::on_comboBox_currentTextChanged(const QString &arg1)
     QSqlQuery*qry=new QSqlQuery();
     QString type=ui->comboBox->currentText();
     if (type=="Par defaut"){
-        qry->prepare("select num_serie,POIDS_BAGAGE,ETAT,NUM_PISTE from avion");
+        qry->prepare("select NUM_RESER,NUM_PASS,ID,CLASSE,PRIX from reservation");
         qry->exec();
         modal->setQuery(*qry);
-        modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_avion"));
-        modal->setHeaderData(1,Qt::Horizontal,QObject::tr("Poids_bagage"));
-        modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Etat"));
-        modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Num_piste"));
+        modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num de reservation"));
+        modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Num de passport"));
+        modal->setHeaderData(1,Qt::Horizontal,QObject::tr("ID vol"));
+         modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Classe"));
+           modal->setHeaderData(4,Qt::Horizontal,QObject::tr("Prix"));
+
         ui->tableView->setModel(modal);}
-        else if (type=="Num Serie"){
-            qry->prepare("select num_serie,POIDS_BAGAGE,ETAT,NUM_PISTE from avion order by num_serie");
+        else if (type=="Num de reservation"){
+            qry->prepare("select NUM_RESER,NUM_PASS,ID,CLASSE,PRIX from reservation order by NUM_RESER");
             qry->exec();
             modal->setQuery(*qry);
-            modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_avion"));
-            modal->setHeaderData(1,Qt::Horizontal,QObject::tr("Poids_bagage"));
-            modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Etat"));
-            modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Num_piste"));
+            modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num de reservation"));
+            modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Num de passport"));
+            modal->setHeaderData(1,Qt::Horizontal,QObject::tr("ID vol"));
+             modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Classe"));
+               modal->setHeaderData(4,Qt::Horizontal,QObject::tr("Prix"));
+
 
             ui->tableView->setModel(modal);
 
 
         }
-        else if (type=="Poids de Bagage"){
-            qry->prepare("select num_serie,POIDS_BAGAGE,ETAT,NUM_PISTE from avion order by POIDS_BAGAGE");
+        else if (type=="Num de passport"){
+            qry->prepare("select NUM_RESER,NUM_PASS,ID,CLASSE,PRIX from reservation order by NUM_PASS");
             qry->exec();
             modal->setQuery(*qry);
-            modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_avion"));
-            modal->setHeaderData(1,Qt::Horizontal,QObject::tr("Poids_bagage"));
-            modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Etat"));
-            modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Num_piste"));
+            modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num de reservation"));
+            modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Num de passport"));
+            modal->setHeaderData(1,Qt::Horizontal,QObject::tr("ID vol"));
+             modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Classe"));
+               modal->setHeaderData(4,Qt::Horizontal,QObject::tr("Prix"));
+
 
             ui->tableView->setModel(modal);
 
 
         }
-        else if (type=="Etat"){
-            qry->prepare("select num_serie,POIDS_BAGAGE,ETAT,NUM_PISTE from avion order by ETAT");
+        else if (type=="Identifiant de vol"){
+            qry->prepare("select NUM_RESER,NUM_PASS,ID,CLASSE,PRIX from reservation order by ID");
             qry->exec();
             modal->setQuery(*qry);
-            modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_avion"));
-            modal->setHeaderData(1,Qt::Horizontal,QObject::tr("Poids_bagage"));
-            modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Etat"));
-            modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Num_piste"));
+            modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num de reservation"));
+            modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Num de passport"));
+            modal->setHeaderData(1,Qt::Horizontal,QObject::tr("ID vol"));
+             modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Classe"));
+               modal->setHeaderData(4,Qt::Horizontal,QObject::tr("Prix"));
+
 
             ui->tableView->setModel(modal);
 
 
         }
-    else if (type=="Num de Piste"){
-        qry->prepare("select num_serie,POIDS_BAGAGE,ETAT,NUM_PISTE from avion order by NUM_PISTE");
+    else if (type=="Classe"){
+        qry->prepare("select NUM_RESER,NUM_PASS,ID,CLASSE,PRIX from reservation order by CLASSE");
         qry->exec();
         modal->setQuery(*qry);
-        modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_avion"));
-        modal->setHeaderData(1,Qt::Horizontal,QObject::tr("Poids_bagage"));
-        modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Etat"));
-        modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Num_piste"));
+        modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num de reservation"));
+        modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Num de passport"));
+        modal->setHeaderData(1,Qt::Horizontal,QObject::tr("ID vol"));
+         modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Classe"));
+           modal->setHeaderData(4,Qt::Horizontal,QObject::tr("Prix"));
+
+        ui->tableView->setModel(modal);
+
+
+    }
+    else if (type=="Prix"){
+        qry->prepare("select NUM_RESER,NUM_PASS,ID,CLASSE,PRIX from reservation order by Prix");
+        qry->exec();
+        modal->setQuery(*qry);
+        modal->setHeaderData(0,Qt::Horizontal,QObject::tr("Num de reservation"));
+        modal->setHeaderData(2,Qt::Horizontal,QObject::tr("Num de passport"));
+        modal->setHeaderData(1,Qt::Horizontal,QObject::tr("ID vol"));
+         modal->setHeaderData(3,Qt::Horizontal,QObject::tr("Classe"));
+           modal->setHeaderData(4,Qt::Horizontal,QObject::tr("Prix"));
 
         ui->tableView->setModel(modal);
 

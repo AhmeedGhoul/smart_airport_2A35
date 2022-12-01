@@ -17,15 +17,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    avion.cpp \
     connection.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    reservation.cpp
 
 HEADERS += \
-    avion.h \
     connection.h \
-    mainwindow.h
+    mainwindow.h \
+    reservation.h
 
 FORMS += \
     mainwindow.ui
