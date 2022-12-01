@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/img/Untitled-1.png</pixmap>
+     <pixmap resource="../../../Pictures/iCloud Photos/Ahmed - Copie/resources.qrc">:/icons/icons/menu.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -301,7 +301,7 @@ border-image:url(&quot;:/img/img/final.png&quot;);color: black;
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/img/logo12.png</pixmap>
+     <pixmap resource="../../../Pictures/iCloud Photos/Ahmed - Copie/resources.qrc">:/img/img/logo12.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -405,7 +405,7 @@ color: #1990ea;
       <x>290</x>
       <y>0</y>
       <width>411</width>
-      <height>541</height>
+      <height>441</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -465,7 +465,7 @@ border-bottom: 1px solid #1990ea;
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>160</x>
        <y>0</y>
        <width>151</width>
        <height>81</height>
@@ -478,7 +478,7 @@ color: #1990ea;
 }</string>
      </property>
      <property name="text">
-      <string>Passagers</string>
+      <string>Pilote</string>
      </property>
     </widget>
     <widget class="Line" name="line_6">
@@ -617,7 +617,7 @@ color: #1990ea;
       <rect>
        <x>10</x>
        <y>100</y>
-       <width>151</width>
+       <width>141</width>
        <height>21</height>
       </rect>
      </property>
@@ -631,14 +631,27 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Num de passport</string>
+      <string>Identifiant de pilote</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_periodepilote">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>200</x>
-       <y>100</y>
+       <x>10</x>
+       <y>270</y>
        <width>111</width>
        <height>21</height>
       </rect>
@@ -653,10 +666,10 @@ color: #1990ea;
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Date de expr</string>
+      <string>Periode</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_nompass">
+    <widget class="QLineEdit" name="lineEdit_nompilote">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -714,7 +727,7 @@ color: #1990ea;
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>460</y>
+       <y>350</y>
        <width>411</width>
        <height>20</height>
       </rect>
@@ -854,7 +867,7 @@ color: #1990ea;
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>490</y>
+       <y>390</y>
        <width>141</width>
        <height>31</height>
       </rect>
@@ -882,7 +895,7 @@ background: white;}  </string>
      <property name="geometry">
       <rect>
        <x>230</x>
-       <y>490</y>
+       <y>390</y>
        <width>151</width>
        <height>31</height>
       </rect>
@@ -903,31 +916,11 @@ background: white;}  </string>
       <string>Modifier</string>
      </property>
     </widget>
-    <widget class="QDateTimeEdit" name="dateTimeEdit_datepass">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>130</y>
-       <width>194</width>
-       <height>22</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_avionpass">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>310</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>280</y>
+       <x>250</x>
+       <y>270</y>
        <width>171</width>
        <height>21</height>
       </rect>
@@ -942,42 +935,20 @@ background: white;}  </string>
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Age</string>
+      <string>Salaire</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_Agepass">
+    <widget class="QLineEdit" name="lineEdit_salairepilote">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
+       <x>250</x>
+       <y>300</y>
        <width>113</width>
        <height>20</height>
       </rect>
      </property>
     </widget>
-    <widget class="QLabel" name="label_10">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>280</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>century gothic</family>
-       <pointsize>-1</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>Num d'avion</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_passpass">
+    <widget class="QLineEdit" name="lineEdit_idpilote">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -987,7 +958,7 @@ background: white;}  </string>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_prenompass">
+    <widget class="QLineEdit" name="lineEdit_prenompilote">
      <property name="geometry">
       <rect>
        <x>250</x>
@@ -997,22 +968,12 @@ background: white;}  </string>
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_Agepass_2">
+    <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>390</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_13">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>360</y>
-       <width>171</width>
+       <x>250</x>
+       <y>100</y>
+       <width>111</width>
        <height>21</height>
       </rect>
      </property>
@@ -1026,85 +987,17 @@ background: white;}  </string>
       <string notr="true"/>
      </property>
      <property name="text">
-      <string>Poids de bagage</string>
+      <string>Mot de passe</string>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox">
+    <widget class="QLineEdit" name="lineEdit_mdppilote">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>370</y>
-       <width>121</width>
-       <height>18</height>
+       <x>250</x>
+       <y>130</y>
+       <width>113</width>
+       <height>20</height>
       </rect>
-     </property>
-     <property name="text">
-      <string>Acides</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBox_2">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>390</y>
-       <width>131</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Pistolets</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBox_3">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>450</y>
-       <width>181</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Equipement Medical</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBox_4">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>430</y>
-       <width>201</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Equipement electronique</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBox_5">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>410</y>
-       <width>121</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Couteau</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>430</y>
-       <width>111</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Import</string>
      </property>
     </widget>
    </widget>
@@ -1121,7 +1014,7 @@ background: white;}  </string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/img/bg3.png</pixmap>
+     <pixmap resource="../../../Pictures/iCloud Photos/Ahmed - Copie/resources.qrc">:/img/img/bg3.png</pixmap>
     </property>
    </widget>
    <widget class="QFrame" name="frame_2">
@@ -1173,7 +1066,7 @@ color: #1990ea;
 }</string>
      </property>
      <property name="text">
-      <string>Liste de Passagers</string>
+      <string>Liste de Pilotes</string>
      </property>
     </widget>
     <widget class="QTableView" name="tableView">
@@ -1270,7 +1163,7 @@ border-bottom: 1px solid #1990ea;
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="resources.qrc">:/img/img/chercher.png</pixmap>
+      <pixmap resource="../../../Pictures/iCloud Photos/Ahmed - Copie/resources.qrc">:/img/img/chercher.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -1379,12 +1272,7 @@ QComboBox::drop-down
      </item>
      <item>
       <property name="text">
-       <string>Num de passport</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Date</string>
+       <string>Identifiant de pilote</string>
       </property>
      </item>
      <item>
@@ -1399,12 +1287,12 @@ QComboBox::drop-down
      </item>
      <item>
       <property name="text">
-       <string>Age</string>
+       <string>Periode</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>Num d'avion</string>
+       <string>Salaire</string>
       </property>
      </item>
     </widget>
@@ -1421,7 +1309,7 @@ QComboBox::drop-down
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="resources.qrc">:/img/img/sort.png</pixmap>
+      <pixmap resource="../../../Pictures/iCloud Photos/Ahmed - Copie/resources.qrc">:/img/img/sort.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/img">
-        <file>img/Untitled-1.png</file>
         <file>img/logo12.png</file>
         <file>img/1.png</file>
         <file>img/2.png</file>
@@ -40,5 +39,6 @@
         <file>icons/runway1.png</file>
         <file>icons/tickets.png</file>
         <file>icons/tickets1.png</file>
+        <file>icons/menu.png</file>
     </qresource>
 </RCC>
