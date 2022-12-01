@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
-#include "reservation.h"
+#include "piste.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -53,7 +53,7 @@ private slots:
 
 private:
    Ui::MainWindow *ui;
-   reservation resmp;
+   piste pismp;
 
 };
 #endif // MAINWINDOW_H
