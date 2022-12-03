@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/Untitled-1.png</file>
+        <file>img/logo12.png</file>
+        <file>img/1.png</file>
+        <file>img/2.png</file>
+        <file>img/final.png</file>
+        <file>img/background.png</file>
+        <file>img/background1.png</file>
+        <file>img/background2.png</file>
+        <file>img/bg.png</file>
+        <file>img/bg2.png</file>
+        <file>img/chercher.png</file>
+        <file>img/check.png</file>
+        <file>img/bg3.png</file>
+        <file>img/sort.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>passager1.png</file>
+        <file>passager.png</file>
+        <file>pilot.png</file>
+        <file>reservation.png</file>
+        <file>runway.png</file>
+        <file>tickets.png</file>
+        <file>plane.png</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>fonts/FoundrySans-ExtraBold.ttf</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/passager1.png</file>
+        <file>icons/passager.png</file>
+        <file>icons/pilot.png</file>
+        <file>icons/pilot1.png</file>
+        <file>icons/plane.png</file>
+        <file>icons/plane1.png</file>
+        <file>icons/reservation.png</file>
+        <file>icons/reservation1.png</file>
+        <file>icons/runway.png</file>
+        <file>icons/runway1.png</file>
+        <file>icons/tickets.png</file>
+        <file>icons/tickets1.png</file>
+    </qresource>
+</RCC>
